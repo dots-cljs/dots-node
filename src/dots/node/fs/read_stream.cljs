@@ -440,8 +440,8 @@
    (.destroy ^js read-stream error)))
 
 (defn emit?
-  {:arglists '([read-stream event]
-               [read-stream event args]
+  {:arglists '([read-stream & event]
+               [read-stream event & args]
                [read-stream event chunk]
                [read-stream event err])}
   (^js [a b & more]

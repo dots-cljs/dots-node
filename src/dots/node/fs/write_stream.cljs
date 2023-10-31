@@ -302,8 +302,8 @@
    (.destroy ^js write-stream error)))
 
 (defn emit?
-  {:arglists '([write-stream event]
-               [write-stream event args]
+  {:arglists '([write-stream & event]
+               [write-stream event & args]
                [write-stream event err]
                [write-stream event src])}
   (^js [a b & more]
